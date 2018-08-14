@@ -6,10 +6,13 @@ class Dog
     @name = name
     @@all << self 
   end 
-end 
+
+def self.all 
+  @@all.each do |name|
+    puts name 
+  end 
     
 def self.clear_all
-
-  @@all = []
+  @@all.clear 
 end 
-
+end 
